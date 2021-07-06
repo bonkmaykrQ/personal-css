@@ -1,0 +1,516 @@
+/* Glacier by bonkmaykr */
+/* All Rights Reserved  */
+/*                      */
+/* bonkmaykr.xyz        */
+/* Gamebanana:bonkmaykr */
+
+@font-face {
+    font-family:Abel;
+    src:url(https://files.gamebanana.com/bitpit/abel-regular.ttf);
+}
+
+@font-face {
+    font-family:pixelated;
+    src:url(https://files.gamebanana.com/bitpit/restu-mvzln.ttf);
+}
+
+@font-face {
+  font-family:statelabel;
+  src:url(https://files.gamebanana.com/bitpit/vipnagorgialla.ttf);
+}
+h1 {font-size:32px;font-family:pixelated !important;}
+h2 {font-size:26px;font-family:pixelated !important;}
+h3 {font-size:22px;font-family:pixelated !important;}
+
+.RichText h1 {font-size:28px;font-family:Abel !important;}
+.RichText h2 {font-size:22px;font-family:Abel !important;}
+.RichText h3 {font-size:16px;font-family:Abel !important;}
+
+module > h2 {
+    font-family:pixelated !important;
+    font-size:21px !important;
+    margin-top: -3px !important;
+    margin-bottom: 5px !important;
+}
+nav > wrapper > module > pane > header > strong {
+    /*font-size:30px;*/
+    /*margin-left:5px;*/
+    
+    font-family:var(--NavPaneTitleFontFamily);
+    font-size:var(--NavPaneTitleFontSize);
+}
+
+body {
+    background:url(https://files.gamebanana.com/bitpit/d68dm8q-9c647492-5a2d-49e8-94ff-d46.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+#BodyWrapper {
+    background:#00505060;
+    font-family:Abel;
+}
+
+statelabel .IsRipeRelated {
+    /*font-family:"Open Sans", sans-serif;*/
+}
+
+#MainContent {
+    backdrop-filter:blur(5px);
+    background:#00505060;
+}
+
+#SecondaryNav, #PrimaryNav {
+    backdrop-filter:blur(37px);
+}
+
+#ResponsibilitiesModule div dl dd ul li {
+    border:none;
+    box-shadow:none;
+}
+
+pane article {
+	background:rgba(26, 66, 75, 0.2);
+}
+
+:root {
+    --NavUpdatesIndicatorColor:#00fff8;
+
+    --SecondaryNavBackgroundColor:#4c6b6f73;
+    --PrimaryNavBackgroundColor:#00707080;
+    --NavPaneBackgroundColor:transparent;
+
+    --LinkColor:#b0d0d0; /*#80a0a0*/
+    --LinkHoverColor:#ffffff;
+
+    --ButtonBackground:#80a0a0;
+    --ButtonHoverBackgroundColor:#a1caca;
+    --ButtonFontColor:white;
+    --ButtonHoverFontColor:white;
+
+    --PageTitleFontSize:4em;
+    --PageTitleColor:#bce9e9;
+
+    --SubNavigatorBorderColor:#94b0c6;
+    --SubNavigatorActiveTabBorderColor:#bce9e9;
+    --SubNavigatorTabHoverBorderColor:white;
+    --SubNavigatorDropdownBackgroundColor: #007070b0;
+
+    --InputTextColor: #ffffff;
+    --InputBackgroundColor: #94b0c6;
+    --InputHoverBackgroundColor: #92bddf;
+    --InputFocusBackgroundColor: #55add4;
+    --InputPlaceholderColor: #bbd8ff;
+
+    --DefaultTextColor: #fdfdfd;
+    --DefaultBlueColor: #a0c4de;
+    --DefaultRedColor: #ff8686;
+    --DefaultRedDarkColor: #693539;
+    --DefaultGreenColor: #9ede9d;
+    --DefaultGreenDarkColor: #424942;
+    --DefaultPurpleColor: #ffb0cf;
+    --DefaultGreyColor: #c6c6c6;
+    --DefaultOrangeColor: #ffac8a;
+    --DefaultYellowColor: #ffed8a;
+    --StateLabelBackground: #55add4;
+    
+    --ModuleTitleUnderlineColor:transparent;
+}
+
+.ExtendedContentButton {
+  background: var(--ButtonBackground);
+  color: var(--ButtonFontColor);
+}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#005050;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #80a0a0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #acd0d0;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #00fff8;
+
+
+}::selection {
+  color: black;
+  background: #00fff8;
+}
+
+keyframes bmSelectionColor {
+  0%, 100%{background:#ff0000;}
+  25% {background:#80ff00;}
+  50% {background:#00faff;}
+  75% {background:#7f00ff;}
+}
+
+#PrimaryNav module pane {
+  /*background:var(--PrimaryNavBackgroundColor);
+  backdrop-filter: blur(2px) !important;*/
+    /*background:#007070a0;
+    backdrop-filter: blur(2px) !important;*/
+    background:#007070dd;
+}
+
+#GbLogo/*, spriteicon*/ {
+  filter:hue-rotate(110deg) !important;
+}
+
+statelabel {
+  text-shadow:0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
+  color:white !important;
+  font-family:statelabel;
+}
+
+/*===========*/
+
+statelabel.IsRipeRelated {
+	border:1px solid white;
+	background: linear-gradient(90deg, rgba(255,0,15,1) 0%, rgba(232,232,0,1) 25%, rgba(0,212,212,1) 50%, rgba(223,0,223,1) 75%, rgba(255,0,17,1) 100%);
+	transform: skewX(-8deg);
+	animation:RipeTagScroll 8s linear infinite;
+}
+
+@keyframes RipeTagScroll {
+	0% {background: rgba(255,0,0,0.6);}
+	16.6% {background: rgba(255,255,0,0.6);}
+	33.3% {background: rgba(0,255,0,0.6);}
+	50.0% {background: rgba(0,255,255,0.6);}
+	66.6% {background: rgba(0,0,255,0.6);}
+	83.3% {background: rgba(255,0,255,0.6);}
+	100% {background: rgba(255,0,0,0.6);}
+}
+statelabel.IsRipeRelated a{color: #FFE033;text-shadow: 0 0 0.125em black;}
+statelabel.IsRipeRelated a:hover{color: #FD70E1;text-shadow: 0 0 0.125em black;}
+
+/*===========*/
+
+.DropdownMenuSubNavigator li ul li a span{
+	color:#acd0d0;
+}.DropdownMenuSubNavigator li ul li a:hover span{
+	color:#fcffff;
+}
+
+module.PageModule > div.Content {
+	/*border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAcZJREFUWEfdlztSwzAQhlc5A8wwNNTUKahzAK5BkQNxAm7gA1BTUFPTZJihp4zYlbW2HitpFZyJB1d+yNKnf58yz992gPmi+8fgWXMb/s/j0zl4TDa3IQAL8K5ZaekxBmC7bgAkPJR2jard0jfaRU2ZmrqZArUFl5KfwRk+MkEGYOGuurCBz14wHUC48AY+0kVwkp3bgYU3wLF2AzcI/8rj+Ds/myN8oa0cbBHA23IMFwM/vTtr+MHOweYAh8kEFwKYwzAEsAYeQkn/qgaZpKCADEB2hdT2NveFCMzAfSVkJwDKtByaURg2FWgBTB4ngBzxXRAxYQ4Rw1A0AQLsr001ZWNa3+JCuRIxgKyATwwu860SYH9lXlrOqFGglYgorw9SctEAEKAEoYqC2YewAAnZ7ZwAT4kssh8onPBUBUSALBdcHAC3pzFD0Qd8QZKcUKfAWEmyyphFhpAHnBMuClBJu1KoqgCC1mruchcqyy0A1xX/fwBlQ0ImnExANSG0qXMkf1Eb1krN0b8yQKEfKBf2epNaI+rqCXu2Jrt9DtoLECYMX6rHQlW50n+i+sKm8wcanvOko1l6figt3BJyPWfDFukZvw+/jbmAqV7VHS8AAAAASUVORK5CYIIA");
+    border-image-slice:21 21 21 21;
+	border-image-width:20px 20px 20px 20px;
+	border-image-outset:0px 0px 0px 0px;
+	border-image-repeat:repeat repeat;
+   */ 
+    background:url(https://files.gamebanana.com/bitpit/ice-vignette-cheap.png), url(https://files.gamebanana.com/bitpit/webpnet-resizeimage_7_.png);
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+    border-radius:3px;
+}
+
+#IdentityModule .Content,
+#PersonalNavModule > pane > article > column > div.Identity {
+	border:1px solid #acd0d0;
+	background: url(https://files.gamebanana.com/bitpit/giargagphy_dafeb.gif), url(https://files.gamebanana.com/bitpit/giphy_8_.gif), #acd0d024 !important;
+    background-size:120%, 50%, 100% !important;
+    background-repeat:repeat, repeat, repeat !important;
+    background-position:50% 50%, 0% 0%, 0% 0% !important;
+} .bmTreatAsIdentityModule {
+	border:1px solid #acd0d0;
+	background: url(https://files.gamebanana.com/bitpit/giphy_8_.gif), #acd0d024 !important;
+    background-size:50%, 100% !important;
+    background-repeat:repeat, repeat !important;
+    background-position:0% 0%, 0% 0% !important;
+}
+
+#PersonalNavModule > pane > article > column > div.Identity {
+	text-shadow:0px 0px 2px #ffffff78, 0px 0px 2px #0dfaffba;
+}
+
+#SecondaryNav wrapper module.Selected icon {
+	background:#70f2ff26 !important;
+	background-size:50%;
+}
+
+.AppCartridgeBack {
+	filter:none !important;
+}
+
+h1#PageTitle {
+	font-family:pixelated;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#MasterLog log {
+    background:var(--SecondaryNavBackgroundColor) !important;
+    backdrop-filter:blur(5px);
+    --DefaultRedColor:#ff0000;
+	--DefaultGreenColor:#00ff00;
+}
+
+#HiddenColumnToggleButton, #HiddenColumnToggleButton maticon {
+	--DefaultRedColor:#aaaaff;
+	--DefaultBlueColor:#aaaaff;
+	--SubNavigatorBorderColor:#8888bb50;
+}
+#HiddenColumnToggleButton maticon {backdrop-filter:blur(0px);} 
+#HiddenColumnToggleButton.Selected, #HiddenColumnToggleButton.Selected maticon {--SubNavigatorBorderColor:#8888bb00;}
+
+.PostStamps li {
+	--DefaultRedColor:#ff0000;
+	--DefaultGreenColor:#00ff00;
+	--DefaultGreyColor:#aaaaff;
+	background:#aaaaff00 !important;
+	backdrop-filter:blur(3px);
+}
+
+.Post .PostReplies module.PageModule div.Content {
+	background:none;
+	border-image:none;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #80a0a0 #005050;
+    /*scrollbar-width: thin;*/
+  }
+}
+
+#AddIdeaLink, #AddBugLink, #AddTicketLink {
+	color:white !important;
+	background:#00707080 !important;
+	backdrop-filter:blur(3px);
+    transition-duration: 0.0s !important;
+}
+
+#AddIdeaLink:hover, #AddBugLink:hover, #AddTicketLink:hover {
+	color:#70F0F0FF !important;
+	background:#FFFFFF90 !important;
+	backdrop-filter:blur(2px);
+}
+
+/*button spriteicon {
+    --DefaultBlueColor: #0000ff;
+    --DefaultRedColor: #ff0000;
+    --DefaultRedDarkColor: #ff0000;
+    --DefaultGreenColor: #00ff00;
+    --DefaultGreenDarkColor: #00ff00;
+    --DefaultPurpleColor: #ff00ff;
+    --DefaultOrangeColor: #ff9900;
+    --DefaultYellowColor: #ffff00;
+}*/
+
+stateLabel.TodoPriority_3 {
+	  animation:statelabelflash 1s linear infinite;
+    background:#55add4;
+}
+
+@keyframes statelabelflash {
+  0%, 100% {background:#ff000080;}
+  50% {background:#ffff0080;}
+}
+
+@media only screen and (max-width: 1052px) {
+    column.xs-h {
+        background:#4c6b6fb3 !important;
+        backdrop-filter:blur(37px) !important;
+    }
+}
+
+li.CountStat ItemCount {
+    font-family:Abel !important;
+    font-weight:normal !important;
+    text-decoration:none !important;
+    color:var(--DefaultGreyColor);
+}
+
+/* Animated Online Indicator */
+
+@keyframes animations {
+        0% {border: 1px solid #000;}
+        25% {border: 1px solid var(--DefaultGreenColor);}
+        50% {border : 1px solid #000;}
+        75% {border : 1px solid var(--DefaultGreenColor);}
+        100% {border : 1px solid #000;}
+}
+
+.Avatar.Online:after, .MemberLink.Online:after {
+    background: var(--DefaultGreenColor);
+    box-shadow: 0 0 5px #40af40;
+    animation-name: animations;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transform:scale(1.1);
+}
+
+/*End Script*/
+/*By Motion. No Copyrights*/
+
+ul.ui-sortable li, #BuddyChatPromoColumn {
+	/*background:#80a0a0ff !important;*/
+	background:#80a0a04f !important;
+	backdrop-filter:blur(3px) !important;
+    /*--LinkColor:#f0e0e0;
+    --LinkHoverColor:#ffffff;*/
+    --LinkColor:#c0c0f0;
+    --LinkHoverColor:#ffffff;
+}
+
+#NavOptionsUiThemeList li a {
+    font-size:12px;
+}
+
+recordcell small.DirectCategory {
+    margin:auto;
+    justify-content:center;
+}
+
+module#SearchNavModule #SearchQueryInput,
+module#RemindersNavModule #MemoTextarea {
+    background:#40a0a080;
+    border:1px solid #40a0a0;
+}
+
+module#SearchNavModule #SearchQueryInput:hover,
+module#RemindersNavModule #MemoTextarea:hover {
+    background:#40a0a0b0;
+    border:1px solid #40a0a0;
+}
+
+module#SearchNavModule #SearchQueryInput:focus,
+module#RemindersNavModule #MemoTextarea:focus {
+    background:#60c0c0f0;
+    border:1px solid #40a0a0;
+}
+
+spriteIcon, .SpriteIcon,
+.MiniMedal_normal, 
+.MiniMedal_rare, 
+.MiniMedal_legendary,
+.Medal_normal, 
+.Medal_rare, 
+.Medal_legendary {
+    background-image: url("https://files.gamebanana.com/bitpit/icon_sheet-1.png") !important;
+}
+
+spriteIcon, .SpriteIcon {
+    /*filter: grayscale(20%) brightness(1.45) contrast(90%) !important;*/
+    filter: saturate(0.45) brightness(1.25) !important;
+    
+    /*fixes a Gamebanana bug in Firefox*/
+    image-rendering: crisp-edges;
+}
+
+.MiniMedal_normal, .Medal_normal {
+    filter: saturate(0.6) brightness(1.15);
+}
+
+.MiniMedal_rare, .Medal_rare {
+    filter: saturate(0.9) brightness(1.15);
+}
+
+.MiniMedal_legendary, .Medal_legendary {
+    filter: saturate(1.6) brightness(0.95);
+}
+
+.MiscIcon.RainbowBanana_16,
+.MiscIcon.RainbowBanana_32,
+.ButtonLike spriteicon:not(.StampIcon),
+.MiscIcon.HideContentIcon,
+button .ActivityTypeIcon,
+.MiscIcon.IncompleteTodoIcon,
+.AdvancedElement_Switch spriteIcon,
+.AppCartridge, .AppCartridgeBack {
+    filter:none !important;
+    background-image: url("https://images.gamebanana.com/static/img/icon_sheet.png?6069b87914bda") !important;;
+}.MiscIcon.ShowContentIcon {
+    filter:hue-rotate(270deg) saturate(5) brightness(0.9) !important;
+    background-image: url("https://images.gamebanana.com/static/img/icon_sheet.png?6069b87914bda") !important;;
+}
+
+
+.EditorIcon /*im not even going to try to fix this yes*/ {
+    filter:saturate(0.4) brightness(1.8) !important;
+    background-image: url("https://images.gamebanana.com/static/img/icon_sheet.png?6069b87914bda") !important;;
+}
+
+.MiscIcon.FeaturedBestOfTheBananaIcon {
+    filter:none !important;
+}
+
+/* Increase palette-colored text contrast */
+.ViewModeSwitchers,
+button spriteicon {
+    --DefaultBlueColor: #0000ff;
+    --DefaultRedColor: #ff0000;
+    --DefaultRedDarkColor: #ff0000;
+    --DefaultGreenColor: #00ff00;
+    --DefaultGreenDarkColor: #00ff00;
+    --DefaultPurpleColor: #ff00ff;
+    --DefaultOrangeColor: #ff9900;
+    --DefaultYellowColor: #ffff00;
+}
+
+.TitleOnly ul {backdrop-filter: blur(20px);overflow-x:visible;}
+
+/*copy search bar attributes to other input methods for consistency*/
+
+button:not(#SearchForm > button), .ButtonLike, textarea, .ExtendedContentButton, .ExtendedContentButton.Expanded{
+    background:#40a0a080;
+    border:1px solid #40a0a0;
+}
+
+.Editor .WysiwygPalettes {
+    background:#40a0a080;
+    border:1px solid #40a0a0;
+    border-top:0px;
+}
+
+.Editor .ViewModes .Wysiwyg .RichText, .ViewModeSwitchers span{
+    background:#40a0a080 !important;
+    border:1px solid #40a0a0;
+    border-bottom:1px solid transparent;
+}
+
+.Wysiwyg .RichText:hover,
+button:not(#SearchForm > button):hover, .ButtonLike:hover, .ExtendedContentButton:hover,
+textarea:hover{
+    background:#40a0a0b0 !important;
+    border:1px solid #40a0a0;
+}
+
+.Editor .ViewModes .Wysiwyg .RichText:focus,
+button:not(#SearchForm > button):active, .ButtonLike:active,
+textarea:focus{
+    background:#60c0c0f0 !important;
+    border:1px solid #40a0a0;
+}
+
+.Modal {background:#00707080 !important;border:1px solid #40a0a0;}
+.ReplyFormModule > .Content {
+    background:transparent !important;
+}
+
+/*HTML Source Code editor*/
+.Source textarea {
+    background:black !important;
+    border:2px inset #006f00 !important;
+    color:#00af00 !important;
+    border-radius:5px !important;
+}
+
+/*remove iconbutton separator*/
+button.IconButton span, button.IconButton hoverAlt, .ButtonLike.IconButton span, .ButtonLike.IconButton hoverAlt {
+    border-left:0px transparent;
+}
+
+button.Selected:not(.ExtendedContentButton), button.Expanded:not(.ExtendedContentButton), .ButtonLike.Selected, .ButtonLike.Expanded {background:#00ffaa88 !important;}

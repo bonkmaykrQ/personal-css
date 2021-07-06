@@ -1,0 +1,332 @@
+/* Roc Candy by bonkmaykr */
+/* All Rights Reserved    */
+/*                        */
+/* bonkmaykr.xyz          */
+/* Gamebanana:bonkmaykr   */
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+
+@font-face {
+    font-family: xirod;
+    src:url("https://files.gamebanana.com/bitpit/xirod.ttf");
+}
+
+@font-face {
+    font-family:basic;
+    src:url("https://files.gamebanana.com/bitpit/personifieduxregular_1.ttf");
+}
+
+:root {
+  --defaultCursor:   url("https://files.gamebanana.com/bitpit/01.cur") 0 0,default !important;
+  --pointerCursor:   url("https://files.gamebanana.com/bitpit/01.cur") 0 0,default !important;
+  /*--pointerCursor:   url("https://files.gamebanana.com/bitpit/15a.cur") 14 2,default !important;*/
+	
+ --DefaultTextColor: #ffffff;
+ --DefaultBlueColor: #6e66ff;
+ /*--DefaultRedColor: #fe668f;*/
+ --DefaultRedColor: #fec60f;
+ --DefaultRedDarkColor: #701E24;
+ --DefaultGreenColor: #fc4b7f;
+ --DefaultGreenDarkColor: #fc4b7f;
+ --DefaultPurpleColor: #fc4b7f;
+ --DefaultGreyColor: #8e86fb;
+ --DefaultOrangeColor: #fc4b7f;
+ --DefaultYellowColor: #FFff00;
+    
+ --StateLabelBackground: #ffffff;
+    
+ --LinkColor: #fc4b7f;
+ --LinkHoverColor: #ffffffcc;
+    
+ --BodyBackground: #3e36abff url("https://files.gamebanana.com/bitpit/roc-metro.png");
+ --BodyWrapperBackground: #3e36abaa; /*#3e36ab66*/
+ 
+ --VisibleHiddenColumnBackground: #3e36abdd;
+
+ --NavPaneBackgroundColor: transparent;
+ --PrimaryNavBottomBorder: 0px transparent;
+ --PrimaryNavBackgroundColor: #3e36abdd;
+ --PrimaryNavHeight: 60px;
+ --PrimaryNavFontSize: 1em;
+ --SecondaryNavBackgroundColor: #3e36abdd;
+ --NavUpdatesIndicatorColor: #fc4b7f;
+ --NavPaneTitleFontFamily: xirod;
+    
+ --PageTitleFontSize: 3em;
+ --PageTitleFontSize800: 2.5em;
+ --PageTitleFontSize600: 2em;
+ --PageTitleFontSize400: 1.5em;
+ --PageTitleColor: white;
+ --PageDescriptionFontSize: 1rem;
+ --BreadcrumbFontSize: 0.8em;
+ --FixedPageTitleFontSize: 1em;
+ --FixedMainContentHeaderBackground: #151d23 url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ 
+ --SubNavigatorBackgroundColor: transparent;
+ --SubNavigatorBorderColor: #fc4b7f;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabFontColor: #fc4b7f;
+ --SubNavigatorActiveTabBorderColor: #ffffff;
+ --SubNavigatorDropdownBackgroundColor: #fc4b7f;
+ --SubNavigatorTabHoverBackgroundColor: #fc4b7f;
+ --SubNavigatorTabHoverBorderColor: white;
+    
+ --MasterLogBackgroundColor: #fc4b7f;
+    
+ --AuxiliaryColumnBackground: transparent;
+ --AuxiliaryColumnBorder: 0px solid transparent;
+ --AuxiliaryColumnModuleBorderColor: transparent;
+    
+ --ModuleTitleFontFamily: xirod;
+ --ModuleTitleUnderlineColor: #fc4b7f;
+ --ModuleDescriptionFontColor: #ffffff;
+ --ModuleBorderColor: transparent;
+    
+ --InputTitleUnderlineColor: #fc4b7f;
+ --InputTextColor: #ffffff;
+ --InputBackgroundColor: #ac1b4faa;
+ --InputHoverBackgroundColor: #ff8bcf7f;
+ --InputFocusBackgroundColor: #fc4b7faf;
+ --InputPlaceholderColor: #ffffff;
+    
+ --ButtonFontColor: #ffffff;
+ --ButtonBackground: #fc4b7f;
+ --ButtonFontFamily: basic;
+ --ButtonHoverFontColor: #ffffff;
+ --ButtonHoverBackgroundColor: #ff8bbf;
+    
+ --PaginatorPageNumberBackgroundColor: #0b1013;
+ --AdvancedElementTabsBackgroundColor: transparent;
+ --AdvancedElementTabsBorderColor: #0e1317;
+ --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    
+ --ActiveTabBorderColor: #FF5E9D;
+ --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    
+ --TableColumnTitleFontColor: #ffffff8a;
+ --TableColumnTitleBackground: #ffffff14;
+ --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
+}
+
+body {
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    
+    font-family:basic;
+}
+
+#MainContentHeader.Fixed {
+    background:#3e36abdd !important;
+}
+
+module.PageModule > div.Content {
+    border:2px solid #fc4b7f;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+@media (pointer: fine) {
+module.PageModule{transition-duration: 0.1s;}
+    module.PageModule:hover > div.Content {
+        box-shadow:0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white, 0px 0px 2px white, 0px 0px 2px white;
+        transition-duration: 0.1s;
+    }
+}
+
+::selection {
+  background: #fc4b7f;
+  color: #ffffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fc4b7f;
+  color: #ffffff; /* Gecko Browsers */
+}
+
+nav#PrimaryNav, nav#SecondaryNav {
+    border:1px solid #fc4b7f !important;
+    border-radius: 18px;
+    /*originally about 30px, had to be reduced because different 
+    secondary nav sizes would cause inconsistencies when expanded*/
+    padding:0px;
+    backdrop-filter: blur(10px);
+    overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
+}
+
+nav#PrimaryNav {padding-left:20px;padding-right:20px;}
+
+nav#SecondaryNav {
+    margin-top:7.5px;
+    margin-bottom:7.5px;
+    height:auto !important;
+}
+
+nav#SecondaryNav.Expanded {
+    height:90vh !important;
+}
+
+nav#PrimaryNav pane {background:#3e36abdd !important;}
+
+::-webkit-scrollbar-track {background:#fc4b7f;}::-webkit-scrollbar-thumb {background:#ffffff;}
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #ffffff #fc4b7f;
+  }
+}
+
+ul.PostStamps li {
+    background:#fc4b7f55 !important;
+    color:#ffffff !important;
+    
+    --DefaultRedColor: #fe760f;
+    --DefaultGreenColor: #fc4b7f;
+    
+}
+
+.ExtendedContentButton:not(:hover):not(.Expanded),
+#ResponsibilitiesModule > div > dl > dd > ul > li
+{background:var(--ButtonBackground);color:white !important;}
+#ResponsibilitiesModule > div > dl > dd > ul > li > a {color:white;}
+/*#ResponsibilitiesModule > div > dl > dd > ul > li > a:hover {color:#ff9bbf;}*/
+#ResponsibilitiesModule > div > dl > dd > ul > li {
+    border-radius: 5px;
+    box-shadow:none;
+    
+    /*less pronounced version*/
+    border:none;
+    padding:4px;
+    padding-right:5px;
+    padding-left:5px;
+}
+
+module > h2 {font-size:20px !important;}
+
+/*Importants are optional, only use them if you want to override UI Themes.*/
+statelabel.IsRipeRelated {
+    background:#ffffff !important;
+    text-shadow: none !important;
+    color:#fc4b7f !important;
+    border:2px solid #fc4b7f !important;
+    
+    /*this bit is specifically just to override UI Themes, you may comment it out.*/
+    transform: none !important;
+    animation:none;
+}
+
+/*this bit as well:*/
+statelabel.IsRipeRelated a {
+    color:#fc4b7f !important;
+    text-shadow: none !important;
+}
+
+button, .ButtonLike {
+ --DefaultRedColor: #ff0000 !important;
+ --DefaultGreenColor: #00ff00 !important;
+}
+
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/logdfgdfgdfgo.gif");
+        background-size:308px 32px;
+       
+        width: 308px;
+        height: 32px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 308px;
+}
+
+/*better contrast*/
+#MasterLog > logs > log > span {color:#ffffff !important;}
+
+@media (min-width : 801px) {
+    #MainContentHeader.Fixed {margin-left:10px;width:800px !important;}
+    nav#PrimaryNav, #MainContentHeader.Fixed {
+        margin-top:10px;
+    }
+    nav#SecondaryNav {
+        margin-top:20px;
+    }
+}
+
+/*=== away from home fixes ===*/
+*:not(.AvatarTooltip[style]):not(.Avatar) {
+ line-height: 1em; /*using em value saves us from having to do one per each font size / 18px*/
+ /*15px / 16px*/
+}
+
+pre{line-height: 18px !important;padding-top:15px;padding-bottom:15px;}
+
+#Headline {margin-top:calc(var(--SecondaryNavSmallIconOuterWidth) + 6px) !important;}
+/*#Headline {margin-top:60px !important;}*/
+
+.Avatar.HasClearanceLevel {
+    box-shadow: 0 0 0 0.2em #ffcc77,0 0 0 0.2em #aaaaff,0 0 .75em #ffdddd,0 0 1.5em #ffffff,0 0 2.5em var(--DefaultGreenColor) !important; /*--DefaultGreenColor*/
+}
+
+pre, code.CodeSnippet {color:var(--DefaultRedColor);}
+/*=== end ===*/
+
+#ImportantLinks > li > a {background:#fc4b7f !important;color:white !important;}
+#ImportantLinks > li > a:hover {background:white !important;color:black !important;}
+
+/*mobile fix*/
+#MainContent {
+        padding-top: 60px;
+        margin-top:0px;
+        border-radius: 18px 18px 0px 0px;
+    }
+
+@media (min-width : 801px) {
+    #MainContent {
+        padding-top: 25px;
+        margin-top:10px;
+        border-radius: 18px 18px 0px 0px;
+    }
+    #MainContentWrapper {padding-top: 25px;}
+    #PageFooter {
+        margin-bottom: -16px !important;
+        padding-bottom: 16px !important;
+    }
+    
+    /* only keep this if you want the borders*/
+    /* if not, comment it out                */
+    /*:root {--32957203:#fc4b7f;--32957204:#fc4b7f66;}
+        #MainContent {
+            border-left:1px solid var(--32957204);
+            border-right:1px solid var(--32957204);
+            border-top:1px solid var(--32957204);
+        }
+        #BodyWrapper {border-radius: 18px;}
+        #PageFooter {
+            border-left:1px solid var(--32957204);
+            border-right:1px solid var(--32957204);
+            border-bottom:1px solid var(--32957204);
+            border-radius:0px 0px 18px 18px;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }*/
+    
+    /* alternate footer      */
+    /* if not, comment it out*/
+    /*#BodyWrapper {border-radius: 18px;}
+        #PageFooter {
+            border-radius:0px 0px 18px 18px !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }*/
+    
+    /* alternate footer  2   */
+    /* if not, comment it out*/
+        #BodyWrapper {border-radius: 18px;}
+        #PageFooter {
+            border-radius:18px !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            /*rgin-top:10px;*/
+            border:2px solid #fc4b7f;
+            border-radius: 10px;
+        }
+}
+
+#BuddyChatPromoColumn {background: #fc4b7f !important;}
