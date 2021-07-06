@@ -267,8 +267,11 @@ pre{line-height: 18px !important;padding-top:15px;padding-bottom:15px;}
 pre, code.CodeSnippet {color:var(--DefaultRedColor);}
 /*=== end ===*/
 
-#ImportantLinks > li > a {background:#fc4b7f !important;color:white !important;}
+#ImportantLinks > li > a, #NavOptionsUiThemeList li > a {background:#fc4b7f !important;color:white !important;}
+#NavOptionsUiThemeList li {background:#fc4b7f !important;color:white !important;}
+#NavOptionsUiThemeList li > button {/*border:2px solid white;*/background:white;}
 #ImportantLinks > li > a:hover {background:white !important;color:black !important;}
+#NavOptionsUiThemeList li > a:hover {color:#ff9bbf !important;}
 
 /*mobile fix*/
 #MainContent {
