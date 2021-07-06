@@ -189,7 +189,7 @@ ul.PostStamps li {
 #ResponsibilitiesModule > div > dl > dd > ul > li > a {color:white;}
 /*#ResponsibilitiesModule > div > dl > dd > ul > li > a:hover {color:#ff9bbf;}*/
 #ResponsibilitiesModule > div > dl > dd > ul > li {
-    border-radius: 5px;
+    border-radius: 1.8px; /*5px*/
     box-shadow:none;
     
     /*less pronounced version*/
