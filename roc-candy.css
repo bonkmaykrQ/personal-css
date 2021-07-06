@@ -292,7 +292,7 @@ pre, code.CodeSnippet {color:var(--DefaultRedColor);}
         padding-bottom: 16px !important;
     }
 	/*prevent secondarynav overlap - alternate method*/
-	#PageTitle {margin-top: 10px;margin-bottom: -10px;}
+	#PageTitle {margin-top: 10px !important;margin-bottom: -10px !important;}
     
     /* only keep this if you want the borders*/
     /* if not, comment it out                */
