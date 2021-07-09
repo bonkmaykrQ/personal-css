@@ -58,6 +58,8 @@ statelabel .IsRipeRelated {
 #MainContent {
     backdrop-filter:blur(5px);
     background:#00505060;
+    margin-top:0px;
+    padding-top:var(--PrimaryNavHeight);
 }
 
 #SecondaryNav, #PrimaryNav {
@@ -97,9 +99,9 @@ pane article {
     --SubNavigatorDropdownBackgroundColor: #007070b0;
 
     --InputTextColor: #ffffff;
-    --InputBackgroundColor: #94b0c6;
-    --InputHoverBackgroundColor: #92bddf;
-    --InputFocusBackgroundColor: #55add4;
+    --InputBackgroundColor: #94b0c644;
+    --InputHoverBackgroundColor: #92bddf5f;
+    --InputFocusBackgroundColor: #55add499;
     --InputPlaceholderColor: #bbd8ff;
 
     --DefaultTextColor: #fdfdfd;
@@ -112,7 +114,7 @@ pane article {
     --DefaultGreyColor: #c6c6c6;
     --DefaultOrangeColor: #ffac8a;
     --DefaultYellowColor: #ffed8a;
-    --StateLabelBackground: #55add4;
+    --StateLabelBackground: #80a0a0/*#55cdd477*/;
     
     --ModuleTitleUnderlineColor:transparent;
 }
@@ -168,7 +170,15 @@ keyframes bmSelectionColor {
 statelabel {
   text-shadow:0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
   color:white !important;
-  font-family:statelabel;
+  font-family:statelabel;    background: #40a0a080;
+  border: 1px solid #40a0a0;
+}
+
+.OnlineStatus > statelabel {border:none;}
+
+.AvatarTooltip statelabel {
+  background: rgba(255,255,255,.1);
+    border:none;
 }
 
 /*===========*/
@@ -234,7 +244,7 @@ module.PageModule > div.Content {
 	text-shadow:0px 0px 2px #ffffff78, 0px 0px 2px #0dfaffba;
 }
 
-#SecondaryNav wrapper module.Selected icon {
+#SecondaryNav > wrapper > module.Selected > icon {
 	background:#70f2ff26 !important;
 	background-size:50%;
 }
@@ -367,6 +377,11 @@ ul.ui-sortable li, #BuddyChatPromoColumn {
 
 #NavOptionsUiThemeList li a {
     font-size:12px;
+    color:#ccf0f0;
+}
+
+#NavOptionsUiThemeList li a:hover {
+    color:#ccdfdf99;
 }
 
 recordcell small.DirectCategory {
@@ -502,9 +517,9 @@ textarea:focus{
 
 /*HTML Source Code editor*/
 .Source textarea {
-    background:black !important;
-    border:2px inset #006f00 !important;
-    color:#00af00 !important;
+    background:#ffffff33 !important;
+    border:2px inset #00000044 !important;
+    color:#ffffff !important;
     border-radius:5px !important;
 }
 
