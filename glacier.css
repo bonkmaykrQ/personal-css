@@ -170,8 +170,9 @@ keyframes bmSelectionColor {
 statelabel {
   text-shadow:0px 0px 2px black, 0px 0px 2px black, 0px 0px 2px black;
   color:white !important;
-  font-family:statelabel;    background: #40a0a080;
-  border: 1px solid #40a0a0;
+  font-family:statelabel;
+    background: #ffffff55;
+  border: 1px solid #ffffff88;
 }
 
 .OnlineStatus > statelabel {border:none;}
@@ -529,3 +530,6 @@ button.IconButton span, button.IconButton hoverAlt, .ButtonLike.IconButton span,
 }
 
 button.Selected:not(.ExtendedContentButton), button.Expanded:not(.ExtendedContentButton), .ButtonLike.Selected, .ButtonLike.Expanded {background:#00ffaa88 !important;}
+
+.BananaTip:not([style*="background"]), .AvatarTooltip:not([style*="background"]) {backdrop-filter: blur(5px);background:rgba(0,0,0,0.4) !important;}
+
