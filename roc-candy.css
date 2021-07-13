@@ -237,7 +237,7 @@ img#GbLogo {
         box-sizing: border-box;
         padding-left: 308px;
 }#BananaNavModule > widget > a {filter:none !important;}
-#BananaNavModule > widget > a:hover {filter:drop-shadow(0px 0px 3.2px blue) !important;}
+#BananaNavModule > widget > a:hover {filter:drop-shadow(0px 0px 3.2px white) !important;}
 
 /*better contrast*/
 #MasterLog > logs > log > span {color:#ffffff !important;}
