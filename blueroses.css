@@ -402,3 +402,6 @@ div.ThirdPartyModule {
     margin-left: 2px;
     margin-right: 2px;
 }
+
+/*contrast fix*/
+.TitleOnly > ul > li itemcount {color:#ff9bcf !important;}
