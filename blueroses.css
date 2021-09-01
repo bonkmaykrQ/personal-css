@@ -375,6 +375,10 @@ nav#SecondaryNav {
     overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
 }
 
+nav#SecondaryNav.Expanded {
+ overflow:hidden; /*fixes corners*/
+}
+
 pane {
     backdrop-filter: blur(10px);
 }
