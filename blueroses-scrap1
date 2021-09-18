@@ -1,0 +1,436 @@
+/* Blue Roses by bonkmaykr */
+/* All Rights Reserved     */
+/* forked from Roc Candy   */
+/*                         */
+/* bonkmaykr.xyz           */
+/* Gamebanana:bonkmaykr    */
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+
+@font-face {
+    font-family: xirod;
+    src:url("https://files.gamebanana.com/bitpit/xirod.ttf");
+}
+
+@font-face {
+    font-family:basic;
+    src:url("https://files.gamebanana.com/bitpit/personifieduxregular_1.ttf");
+}
+
+:root {
+  --defaultCursor:   url("https://bonkmaykr.xyz/index/assets/images/bmpointer.cur") 0 0,default !important;
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe1.png") 15 15,pointer;
+  /*--pointerCursor:   url("https://files.gamebanana.com/bitpit/15a.cur") 14 2,default !important;*/
+	animation: cursor-animation 1s linear infinite;
+    
+ --DefaultTextColor: #ffffff;
+ --DefaultBlueColor: #6e66ff;
+ /*--DefaultRedColor: #fe668f;*/
+ --DefaultRedColor: #fec60f;
+ --DefaultRedDarkColor: #701E24;
+ --DefaultGreenColor: #fc4b7f;
+ --DefaultGreenDarkColor: #fc4b7f;
+ --DefaultPurpleColor: #fc4b7f;
+ --DefaultGreyColor: #8e86fb;
+ --DefaultOrangeColor: #fc4b7f;
+ --DefaultYellowColor: #FFff00;
+    
+ --StateLabelBackground: #ffffff;
+    
+ --LinkColor: #fc4b7f;
+ --LinkHoverColor: #ffffffcc;
+    
+ --BodyBackground: url("https://bonkmaykr.xyz/index/assets/images/804772.jpg");
+ --BodyWrapperBackground: transparent;url("https://bonkmaykr.xyz/index/assets/images/flowers-50perc.png"), #0000ffaa; /*#3e36ab66*/
+ 
+ --VisibleHiddenColumnBackground: #3e36abdd;
+
+ --NavPaneBackgroundColor: transparent;
+ --PrimaryNavBottomBorder: 0px transparent;
+ --PrimaryNavBackgroundColor: transparent;
+ --PrimaryNavHeight: 60px;
+ --PrimaryNavFontSize: 1em;
+ --SecondaryNavBackgroundColor: #3e36abdd;
+ --NavUpdatesIndicatorColor: #fc4b7f;
+ --NavPaneTitleFontFamily: xirod;
+    
+ --PageTitleFontSize: 3em;
+ --PageTitleFontSize800: 2.5em;
+ --PageTitleFontSize600: 2em;
+ --PageTitleFontSize400: 1.5em;
+ --PageTitleColor: white;
+ --PageDescriptionFontSize: 1rem;
+ --BreadcrumbFontSize: 0.8em;
+ --FixedPageTitleFontSize: 1em;
+ --FixedMainContentHeaderBackground: #151d23 url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ 
+ --SubNavigatorBackgroundColor: transparent;
+ --SubNavigatorBorderColor: #fc4b7f;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabFontColor: #fc4b7f;
+ --SubNavigatorActiveTabBorderColor: #ffffff;
+ --SubNavigatorDropdownBackgroundColor: #fc4b7f;
+ --SubNavigatorTabHoverBackgroundColor: #fc4b7f;
+ --SubNavigatorTabHoverBorderColor: white;
+    
+ --MasterLogBackgroundColor: #fc4b7f;
+    
+ --AuxiliaryColumnBackground: transparent;
+ --AuxiliaryColumnBorder: 0px solid transparent;
+ --AuxiliaryColumnModuleBorderColor: transparent;
+    
+ --ModuleTitleFontFamily: xirod;
+ --ModuleTitleUnderlineColor: #fc4b7f;
+ --ModuleDescriptionFontColor: #ffffff;
+ --ModuleBorderColor: transparent;
+    
+ --InputTitleUnderlineColor: #fc4b7f;
+ --InputTextColor: #ffffff;
+ --InputBackgroundColor: #ac1b4faa;
+ --InputHoverBackgroundColor: #ff8bcf7f;
+ --InputFocusBackgroundColor: #fc4b7faf;
+ --InputPlaceholderColor: #ffffff;
+    
+ --ButtonFontColor: #ffffff;
+ --ButtonBackground: #fc4b7f;
+ --ButtonFontFamily: basic;
+ --ButtonHoverFontColor: #ffffff;
+ --ButtonHoverBackgroundColor: #ff8bbf;
+    
+ --PaginatorPageNumberBackgroundColor: #0b1013;
+ --AdvancedElementTabsBackgroundColor: transparent;
+ --AdvancedElementTabsBorderColor: #0e1317;
+ --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    
+ --ActiveTabBorderColor: #FF5E9D;
+ --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    
+ --TableColumnTitleFontColor: #ffffff8a;
+ --TableColumnTitleBackground: #ffffff14;
+ --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
+}
+
+html {animation: cursor-animation 1s linear infinite;}
+
+@keyframes cursor-animation {
+    0% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe1.png") 15 15,pointer !important;}
+    11.1% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe2.png") 15 15,pointer !important;}
+    22.2% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe3.png") 15 15,pointer !important;}
+    33.3% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe4.png") 15 15,pointer !important;}
+    44.4% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe5.png") 15 15,pointer !important;}
+    55.5% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe6.png") 15 15,pointer !important;}
+    66.6% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe7.png") 15 15,pointer !important;}
+    77.7% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe8.png") 15 15,pointer !important;}
+    88.8% {
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe9.png") 15 15,pointer !important;}
+}
+
+body {
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    
+    font-family:basic;
+}
+
+#MainContentHeader.Fixed {
+    background:#3e36abdd !important;
+}
+/*
+@media (pointer: fine) {
+module.PageModule{transition-duration: 0.1s;}
+    module.PageModule:hover > div.Content {
+        box-shadow:0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white, 0px 0px 2px white, 0px 0px 2px white;
+        transition-duration: 0.1s;
+    }
+}
+*/
+::selection {
+  background: #fc4b7f;
+  color: #ffffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fc4b7f;
+  color: #ffffff; /* Gecko Browsers */
+}
+
+nav#PrimaryNav pane {background:#3e36abdd !important;}
+
+::-webkit-scrollbar-track {background:#fc4b7f;}::-webkit-scrollbar-thumb {background:#ffffff;}
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #ffffff #fc4b7f;
+  }
+}
+
+ul.PostStamps li {
+    background:#fc4b7f55 !important;
+    color:#ffffff !important;
+    
+    --DefaultRedColor: #fe760f;
+    --DefaultGreenColor: #fc4b7f;
+}
+
+.ExtendedContentButton:not(:hover):not(.Expanded),
+#ResponsibilitiesModule > div > dl > dd > ul > li
+{background:var(--ButtonBackground);color:white !important;}
+#ResponsibilitiesModule > div > dl > dd > ul > li > a {color:white;}
+/*#ResponsibilitiesModule > div > dl > dd > ul > li > a:hover {color:#ff9bbf;}*/
+#ResponsibilitiesModule > div > dl > dd > ul > li {
+    border-radius: 1.8px; /*5px*/
+    box-shadow:none;
+    
+    /*less pronounced version*/
+    border:none;
+    padding:4px;
+    padding-right:5px;
+    padding-left:5px;
+}
+
+module > h2 {font-size:20px !important;}
+
+/*Importants are optional, only use them if you want to override UI Themes.*/
+statelabel.IsRipeRelated {
+    background:#ffffff !important;
+    text-shadow: none !important;
+    color:#fc4b7f !important;
+    border:2px solid #fc4b7f !important;
+    
+    /*this bit is specifically just to override UI Themes, you may comment it out.*/
+    transform: none !important;
+    animation:none;
+}
+
+/*this bit as well:*/
+statelabel.IsRipeRelated a {
+    color:#fc4b7f !important;
+    text-shadow: none !important;
+}
+
+button, .ButtonLike {
+ --DefaultRedColor: #ff0000 !important;
+ --DefaultGreenColor: #00ff00 !important;
+}
+
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/logdfgdfgdfgo.gif");
+        background-size:308px 32px;
+    
+        filter:none !important;
+       
+        width: 308px;
+        height: 32px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 308px;
+}#BananaNavModule > widget > a {filter:none !important;}
+#BananaNavModule > widget > a:hover {filter:drop-shadow(0px 0px 3.2px blue) !important;}
+
+/*better contrast*/
+#MasterLog > logs > log > span {color:#ffffff !important;}
+
+/*=== away from home fixes ===*/
+*:not(.AvatarTooltip[style]):not(.Avatar) {
+ line-height: 1em; /*using em value saves us from having to do one per each font size / 18px*/
+ /*15px / 16px*/
+}
+
+pre{line-height: 18px !important;padding-top:15px;padding-bottom:15px;}
+
+#Headline {margin-top:calc(var(--SecondaryNavSmallIconOuterWidth) + 6px) !important;}
+/*#Headline {margin-top:60px !important;}*/
+
+.Avatar.HasClearanceLevel {
+    box-shadow: 0 0 0 0.2em #ffcc77,0 0 0 0.2em #aaaaff,0 0 .75em #ffdddd,0 0 1.5em #ffffff,0 0 2.5em var(--DefaultGreenColor) !important; /*--DefaultGreenColor*/
+}
+
+pre, code.CodeSnippet {color:var(--DefaultRedColor);}
+/*=== end ===*/
+
+#ImportantLinks > li > a, #NavOptionsUiThemeList li > a {background:#fc4b7f !important;color:white !important;}
+#NavOptionsUiThemeList li {background:#fc4b7f !important;color:white !important;}
+#NavOptionsUiThemeList li > button {/*border:2px solid white;*/background:white;}
+#ImportantLinks > li > a:hover {background:white !important;color:black !important;}
+#NavOptionsUiThemeList li > a:hover {color:#ff9bbf !important;}
+
+    #PageFooter {
+        box-shadow: 0px 0px 5px black, 0px 0px 7px black, 0px 0px 10px black !important;
+        background: url("https://files.gamebanana.com/bitpit/roc-metro.png"), #3e36ab !important; 
+  background-position: right !important;
+  background-size:300px !important;
+  background-repeat:no-repeat !important;
+  border-bottom:2px outset #7777ff !important;
+  backdrop-filter: blur(20px) !important;
+    }
+
+@media (min-width : 801px) {
+	/*prevent secondarynav overlap - alternate method*/
+	#PageTitle {margin-top: 10px !important;margin-bottom: -10px !important;}
+}
+
+#BuddyChatPromoColumn {background: #fc4b7f !important;}
+body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper {margin-left:-2.5px;}
+
+/*everything below this point is exclusive to this css and not Roc Candy*/
+#MainContentWrapper {
+    background:url("https://bonkmaykr.xyz/index/assets/images/flowers-50perc.png"), #0000ffaa !important;
+  background-position: center top !important;
+  background-size:800px !important;
+  border-bottom:2px outset #7777ff !important;
+  backdrop-filter: blur(20px) !important;
+    box-shadow: 0px 0px 5px black, 0px 0px 7px black, 0px 0px 10px black !important;
+    padding-bottom:10px;
+}
+
+#PrimaryNav {
+  background: rgb(255,255,255) !important;
+  background: url("https://bonkmaykr.xyz/index/assets/images/flowers-50perc.png"), linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(170,170,255,1) 100%) !important; 
+  border-bottom:2px outset #7777ff !important;
+  background-size:350px !important;
+  background-position:center !important;
+}
+
+module.PageModule > div.Content {
+  background:#3e36ab;
+  background-position: center;
+  border:3px solid #fc4b7f;
+  border-radius:16px;
+  box-shadow:0px 0px 15px inset #000000;
+  padding:10px !important;
+}
+
+module.PageModule > h2 {
+  background:#3e36ab;
+  background-position: center;
+  border:3px solid #fc4b7f;
+  border-radius:16px;
+  box-shadow:0px 0px 15px inset #000000, 0px 0px 4.5px #000000;
+  padding:7px !important;
+    text-align: center;
+}
+
+module.PageModule > h2:after {display:none;}
+
+overlay#Headline {
+  display:grid; /*block*/
+  background:url("https://bonkmaykr.xyz/index/assets/images/channels4_banner.jpg");
+  width:100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  height:200px;
+  border:5px solid #fc4b7f;
+  border-radius:20px;
+  box-shadow:0px 0px 15px inset #000000;
+    margin:2.5px;
+    margin-top:50px !important;
+}
+
+nav#Breadcrumb {
+    width:auto !important;
+    display:flex !important;
+    
+    /*unnecessary*/
+    /*position: absolute;
+    right:20px;
+    bottom:20px;*/
+    
+    /*minmode*/
+    /*comment out if unwanted*/
+    /*margin-bottom:-8px;
+    margin-right:-8px;*/
+    
+    /*half minmode*/
+    /*comment out if unwanted*/
+    margin-bottom:-5px;
+    margin-right:-5px;
+}
+
+hwrapper > #PageTitle {display:none;}
+
+@media (max-width : 800px) {
+    overlay#Headline {height:20vw;background-size:auto 130%;margin:20px;}
+	
+/*classic breadcrumbs*/
+/*#Breadcrumb { font-size:var(--BreadcrumbFontSize); font-weight:bold; padding:.25em .75em; border-radius:1em; align-self:flex-end;}#Breadcrumb img {display:none;}#Breadcrumb .RightArrowIcon {width:0px;margin-left:7px;margin-right:12.5px;}#Breadcrumb .RightArrowIcon:after {content:"/";}*/
+}
+
+@media (max-width : 518px) {
+    nav#Breadcrumb {
+    /*minmode*/
+   /* margin-bottom:-8px;
+    margin-right:-8px;*/
+    }
+}
+
+@media (min-width : 1700px) {
+    overlay#Headline {height:11.75vw;background-size:cover;}
+}
+
+@media (min-width : 801px) {
+.PageModule {
+    padding: .3em .45em .25em .45em !important;
+}
+#MainContentWrapper {
+    padding-left: 10px !important;
+    padding-right:10px !important;
+}
+}
+
+nav#SecondaryNav {
+    margin-bottom:7.5px;
+    height:auto !important;
+    border:2px solid #4f4faa !important;
+    border-top:none !important;
+    border-radius: 0px 0px 18px 18px;
+    /*originally about 30px, had to be reduced because different 
+    secondary nav sizes would cause inconsistencies when expanded*/
+    padding:0px;
+    backdrop-filter: blur(10px);
+    overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
+}
+
+nav#SecondaryNav.Expanded {
+ overflow:hidden; /*fixes corners*/
+}
+
+pane {
+    backdrop-filter: blur(10px);
+}
+
+nav#SecondaryNav.Expanded {
+    height:90vh !important;
+    border:2px solid #fc4b7f !important;
+    border-top:none !important;
+}
+
+#SearchForm > input {
+  background:#3e36ab;
+  background-position: center;
+  border:3px solid #fc4b7f;
+  border-radius:8px;
+  box-shadow:0px 0px 3px inset #000000;
+  padding:8px !important;
+    padding-left:8px !important;
+    padding-right:24px !important;
+}
+	
+/*classic breadcrumbs - everywhere*/
+#Breadcrumb { font-size:var(--BreadcrumbFontSize); font-weight:bold; padding:.25em .75em; border-radius:1em; align-self:flex-end;}#Breadcrumb img {display:none;}#Breadcrumb .RightArrowIcon {width:0px;margin-left:7px;margin-right:12.5px;}#Breadcrumb .RightArrowIcon:after {content:"/";}
+
+/*div.ThirdPartyModule {
+    margin-left: 2px;
+    margin-right: 2px;
+}*/
+
+/*contrast fix*/
+.TitleOnly > ul > li itemcount {color:#ff9bcf !important;}
