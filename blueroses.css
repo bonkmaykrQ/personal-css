@@ -20,7 +20,7 @@
 
 :root {
   --defaultCursor:   url("https://bonkmaykr.xyz/index/assets/images/bmpointer.cur") 0 0,default !important;
-  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/bmpointer.cur") 0 0,pointer !important;
+  --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe1.png") 15 15,pointer;
   /*--pointerCursor:   url("https://files.gamebanana.com/bitpit/15a.cur") 14 2,default !important;*/
 	
  --DefaultTextColor: #ffffff;
