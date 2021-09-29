@@ -383,6 +383,10 @@ pane {
     backdrop-filter: blur(10px);
 }
 
+#SecondaryNav > wrapper > module > pane {
+    backdrop-filter: none !important;
+}
+
 nav#SecondaryNav.Expanded {
     height:90vh !important;
     border:2px solid #fc4b7f !important;
