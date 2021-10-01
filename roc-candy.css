@@ -339,6 +339,10 @@ pre, code.CodeSnippet {color:var(--DefaultRedColor);}
         }
 }
 
+nav#SecondaryNav.Expanded {
+ overflow:hidden; /*fixes corners*/
+}
+
 #BuddyChatPromoColumn {background: #fc4b7f !important;}
 body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper {margin-left:-2.5px;}
 
