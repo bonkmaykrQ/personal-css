@@ -348,3 +348,10 @@ body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper 
 
 /*contrast fix*/
 .TitleOnly > ul > li itemcount {color:#ff9bcf !important;}
+
+nav#PrimaryNav > module > pane {
+    border:2px solid #fc4b7f !important;
+    border-radius: 18px !important;
+    overflow:hidden;
+    backdrop-filter: blur(10px) !important;
+}
