@@ -414,3 +414,10 @@ nav#SecondaryNav.Expanded {
 
 /*contrast fix*/
 .TitleOnly > ul > li itemcount {color:#ff9bcf !important;}
+
+nav#PrimaryNav > module > pane {
+    border:2px solid #fc4b7f !important;
+    border-top:none !important;
+    border-radius: 0px 0px 18px 18px !important;
+    overflow:hidden;
+}
