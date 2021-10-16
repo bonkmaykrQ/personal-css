@@ -6,6 +6,7 @@
 
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cmodwidth.css");
 
 @font-face {
     font-family: xirod;
@@ -18,6 +19,8 @@
 }
 
 :root {
+  --cmodwidth:0.2em;
+    
   --defaultCursor:   url("https://files.gamebanana.com/bitpit/01.cur") 0 0,default !important;
   --pointerCursor:   url("https://files.gamebanana.com/bitpit/01.cur") 0 0,default !important;
   /*--pointerCursor:   url("https://files.gamebanana.com/bitpit/15a.cur") 14 2,default !important;*/
