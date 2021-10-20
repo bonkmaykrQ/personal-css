@@ -9,6 +9,8 @@
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/cmodwidth.css");
 
+module.PageModule.bmSteamAccountDetails {padding-top: 7px !important;}
+
 @font-face {
     font-family: xirod;
     src:url("https://files.gamebanana.com/bitpit/xirod.ttf");
@@ -20,7 +22,7 @@
 }
 
 :root {
-  --cmodwidth:0.1em;
+  --cmodwidth:0.15em;
 	
   --defaultCursor:   url("https://bonkmaykr.xyz/index/assets/images/bmpointer.cur") 0 0,default !important;
   --pointerCursor:   url("https://bonkmaykr.xyz/index/assets/images/ezgif-3-82b0eaebd27b-png-split/frame_apngframe1.png") 15 15,pointer;
