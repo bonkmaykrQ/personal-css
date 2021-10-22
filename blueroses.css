@@ -250,7 +250,6 @@ pre, code.CodeSnippet {color:var(--DefaultRedColor);}
   background-position: right !important;
   background-size:300px !important;
   background-repeat:no-repeat !important;
-  border-bottom:2px outset #7777ff !important;
   backdrop-filter: blur(20px) !important;
     }
 
