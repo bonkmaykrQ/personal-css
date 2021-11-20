@@ -364,7 +364,7 @@ nav#SecondaryNav {
     overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
 }
 
-#tippy-16, #tippy-8 {
+#tippy-16, #tippy-8, #tippy-9 {
     margin-bottom:7.5px;
     border:2px solid #4f4faa !important;
     border-top:none !important;
@@ -374,7 +374,7 @@ nav#SecondaryNav {
     background: #3e36abdd;
     transition-duration:0s !important; 
     /*i'm too fuckin stupid to add the transition properly, the classes needed are not clear*/
-}#tippy-16 div.tippy-box, #tippy-8 div.tippy-box {margin:0px !important;
+}#tippy-16 div.tippy-box, #tippy-8 div.tippy-box, #tippy-9 div.tippy-box {margin:0px !important;
     transition-duration:0.00000001s !important;}
 /*settings this to 0 breaks shit for some reason, pb why????*/
 
