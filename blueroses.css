@@ -202,21 +202,6 @@ button, .ButtonLike {
  --DefaultGreenColor: #00ff00 !important;
 }
 
-img#GbLogo {
-        background:url("https://files.gamebanana.com/bitpit/logdfgdfgdfgo.gif");
-        background-size:308px 32px;
-    
-        filter:none !important;
-       
-        width: 308px;
-        height: 32px;
-        display:block;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding-left: 308px;
-}#BananaNavModule > widget > a {filter:none !important;}
-#BananaNavModule > widget > a:hover {filter:drop-shadow(0px 0px 3.2px blue) !important;}
-
 /*better contrast*/
 #MasterLog > logs > log > span {color:#ffffff !important;}
 
@@ -424,4 +409,24 @@ nav#PrimaryNav > module > pane {
     border-top:none !important;
     border-radius: 0px 0px 18px 18px !important;
     overflow:hidden;
+}
+
+@media only screen and (min-width : 1001px) {
+a#SiteLogo > img {
+	background:url("https://files.gamebanana.com/bitpit/logdfgdfgdfgo.gif");
+        background-size:308px 32px;
+    
+        filter:none !important;
+       
+        width: 308px;
+        height: 32px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 308px;
+    }#BananaNavModule > widget > a {filter:none !important;}
+    a#SiteLogo {filter:none !important;}
+}
+@media only screen and (max-width : 1000px) {
+    
 }
