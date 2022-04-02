@@ -449,8 +449,7 @@ a#SiteLogo > img {
 
 #PrimaryNav .UserPoints {text-shadow: 0px 0px 8px black, 0px 0px 2px black;}
 
-#SiteMenu {
-  margin:-7px;
+body.site-gamebanana > div[id^="tippy-"] > .tippy-box > .tippy-content {
   /*margin-top:5px;
   max-height: 90vh;*/
   border: 2px solid #fc4b7f !important;
@@ -458,6 +457,10 @@ a#SiteLogo > img {
     border-top:none !important;
     background: var(--SecondaryNavBackgroundColor);
   padding:10px !important;
+}
+
+body.site-gamebanana > div[id^="tippy-"] {
+  margin:-7px;
 }
 
 #NavGamesMenuToggle {filter:drop-shadow(0px 0px 8px black) drop-shadow(0px 0px 2px black);}
