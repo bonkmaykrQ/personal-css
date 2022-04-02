@@ -446,3 +446,18 @@ a#SiteLogo > img {
 @media only screen and (max-width : 1000px) {
     
 }
+
+#PrimaryNav .UserPoints {text-shadow: 0px 0px 8px black, 0px 0px 2px black;}
+
+#SiteMenu {
+  margin:-7px;
+  /*margin-top:5px;
+  max-height: 90vh;*/
+  border: 2px solid #fc4b7f !important;
+  border-radius: 0px 0px 18px 18px;
+    border-top:none !important;
+    background: var(--SecondaryNavBackgroundColor);
+  padding:10px !important;
+}
+
+#NavGamesMenuToggle {filter:drop-shadow(0px 0px 8px black) drop-shadow(0px 0px 2px black);}
