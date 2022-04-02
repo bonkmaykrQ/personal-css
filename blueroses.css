@@ -364,22 +364,6 @@ nav#SecondaryNav {
     overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
 }
 
-#tippy-16, #tippy-8, #tippy-9 {
-    margin-bottom:7.5px;
-    border:2px solid #4f4faa !important;
-    border-top:none !important;
-    border-radius: 0px 0px 18px 18px;
-    backdrop-filter: blur(10px);
-    overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
-    background: #3e36abdd;
-    transition-duration:0s !important; 
-    /*i'm too fuckin stupid to add the transition properly, the classes needed are not clear*/
-}#tippy-16 div.tippy-box, #tippy-8 div.tippy-box, #tippy-9 div.tippy-box {margin:0px !important;
-    transition-duration:0.00000001s !important;}
-/*settings this to 0 breaks shit for some reason, pb why????*/
-
-#tippy-8 {max-width:350px;width:100%;min-width:100px;}
-
 nav#SecondaryNav.Expanded {
  overflow:hidden; /*fixes corners*/
 }
@@ -457,6 +441,7 @@ body.site-gamebanana > div[id^="tippy-"] > .tippy-box > .tippy-content {
     border-top:none !important;
     background: var(--SecondaryNavBackgroundColor);
   padding:10px !important;
+    backdrop-filter: blur(10px);
 }
 
 body.site-gamebanana > div[id^="tippy-"] {
