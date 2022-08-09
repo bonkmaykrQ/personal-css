@@ -255,6 +255,7 @@ body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper 
   backdrop-filter: blur(20px) !important;
     box-shadow: 0px 0px 5px black, 0px 0px 7px black, 0px 0px 10px black !important;
     padding-bottom:10px;
+	z-index:0;
 }
 
 #PrimaryNav {
