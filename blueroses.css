@@ -205,7 +205,6 @@ button, .ButtonLike {
 /*better contrast*/
 #MasterLog > logs > log > span {color:#ffffff !important;}
 
-/*=== away from home fixes ===*/
 *:not(.AvatarTooltip[style]):not(.Avatar) {
  line-height: 1em; /*using em value saves us from having to do one per each font size / 18px*/
  /*15px / 16px*/
@@ -221,7 +220,6 @@ pre{line-height: 18px !important;padding-top:15px;padding-bottom:15px;}
 }
 
 pre, code.CodeSnippet {color:var(--DefaultRedColor);}
-/*=== end ===*/
 
 #ImportantLinks > li > a, #NavOptionsUiThemeList li > a {background:#fc4b7f !important;color:white !important;}
 #NavOptionsUiThemeList li {background:#fc4b7f !important;color:white !important;}
@@ -246,7 +244,8 @@ pre, code.CodeSnippet {color:var(--DefaultRedColor);}
 #BuddyChatPromoColumn {background: #fc4b7f !important;}
 body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper {margin-left:-2.5px;}
 
-/*everything below this point is exclusive to this css and not Roc Candy*/
+/*everything below this point overrides whatever is above it, especially from Roc Candy which this is a fork of*/
+/*you may see redundant css code*/
 #MainContentWrapper {
     background:url("https://bonkmaykr.xyz/index/assets/images/flowers-50perc.png"), #0000ffaa !important;
   background-position: center top !important;
@@ -257,6 +256,7 @@ body:not([data-_ssecondarynavmode="Float"]) > wrapper > #SecondaryNav > wrapper 
     padding-bottom:10px;
 	z-index:0;
 }
+#MainContent {z-index:-1; /*footer overlap fix, 2022*/}
 
 #PrimaryNav {
   background: rgb(255,255,255) !important;
