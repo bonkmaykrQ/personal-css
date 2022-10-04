@@ -362,7 +362,7 @@ nav#SecondaryNav {
     secondary nav sizes would cause inconsistencies when expanded*/
     padding:0px;
     backdrop-filter: blur(10px);
-    overflow:visible; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
+    overflow:hidden; /*fix scrollbars appearing when Secondary Nav Hover Animations is installed*/
 }
 
 nav#SecondaryNav.Expanded {
@@ -434,19 +434,19 @@ a#SiteLogo > img {
 
 #PrimaryNav .UserPoints {text-shadow: 0px 0px 8px black, 0px 0px 2px black;}
 
-body.site-gamebanana > div[id^="tippy-"] > .tippy-box > .tippy-content {
+div[id^="tippy-"] > .tippy-box > .tippy-content {
   /*margin-top:5px;
   max-height: 90vh;*/
   border: 2px solid #fc4b7f !important;
-  border-radius: 0px 0px 18px 18px;
-    border-top:none !important;
+  border-radius: 18px;
     background: var(--SecondaryNavBackgroundColor);
   padding:10px !important;
     backdrop-filter: blur(10px);
 }
 
-body.site-gamebanana > div[id^="tippy-"] {
-  margin:-7px;
+div[id^="tippy-"] > .tippy-box[data-theme*="dropdown"] > .tippy-content {
+    border-top:none !important;
+    border-radius: 0px 0px 18px 18px;
 }
 
 #NavGamesMenuToggle {filter:drop-shadow(0px 0px 8px black) drop-shadow(0px 0px 2px black);}
