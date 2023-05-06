@@ -435,7 +435,7 @@ a#SiteLogo > img {
 
 #PrimaryNav .UserPoints {text-shadow: 0px 0px 8px black, 0px 0px 2px black;}
 
-div[id^="tippy-"] > .tippy-box > .tippy-content:not(:has(.AvatarTooltip) {
+div[id^="tippy-"] > .tippy-box > .tippy-content:not(:has(.AvatarTooltip)) {
   /*margin-top:5px;
   max-height: 90vh;*/
   border: 2px solid #fc4b7f !important;
