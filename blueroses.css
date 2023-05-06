@@ -160,6 +160,7 @@ ul.PostStamps li {
     --DefaultRedColor: #fe760f;
     --DefaultGreenColor: #fc4b7f;
 }
+ul.PostStamps {border-color: var(--PostStampColor);}
 
 .ExtendedContentButton:not(:hover):not(.Expanded),
 #ResponsibilitiesModule > div > dl > dd > ul > li
@@ -434,7 +435,7 @@ a#SiteLogo > img {
 
 #PrimaryNav .UserPoints {text-shadow: 0px 0px 8px black, 0px 0px 2px black;}
 
-div[id^="tippy-"] > .tippy-box > .tippy-content {
+div[id^="tippy-"] > .tippy-box > .tippy-content:not(:has(.AvatarTooltip) {
   /*margin-top:5px;
   max-height: 90vh;*/
   border: 2px solid #fc4b7f !important;
