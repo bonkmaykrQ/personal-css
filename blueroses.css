@@ -155,10 +155,9 @@ nav#PrimaryNav pane {background:#3e36abdd !important;}
 
 ul.PostStamps li {
     background:#fc4b7f55 !important;
-    color:#ffffff !important;
     
-    --DefaultRedColor: #fe760f;
-    --DefaultGreenColor: #fc4b7f;
+    /*--DefaultRedColor: #fe760f;
+    --DefaultGreenColor: #fc4b7f;*/
 }
 ul.PostStamps {border-color: var(--PostStampColor) !important;}
 
