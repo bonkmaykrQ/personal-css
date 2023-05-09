@@ -160,6 +160,7 @@ ul.PostStamps li {
     --DefaultGreenColor: #fc4b7f;*/
 }
 ul.PostStamps {border-color: var(--PostStampColor) !important;}
+li.PostStamp > span {color:#ffffff !important;}
 
 .ExtendedContentButton:not(:hover):not(.Expanded),
 #ResponsibilitiesModule > div > dl > dd > ul > li
