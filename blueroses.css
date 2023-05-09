@@ -153,14 +153,14 @@ nav#PrimaryNav pane {background:#3e36abdd !important;}
   }
 }
 
-ul.PostStamps li {
+.PostStamp {
     background:#fc4b7f55 !important;
     
-    /*--DefaultRedColor: #fe760f;
-    --DefaultGreenColor: #fc4b7f;*/
+    --DefaultRedColor: #fe760f;
+    --DefaultGreenColor: #fc4b7f;
 }
 ul.PostStamps {border-color: var(--PostStampColor) !important;}
-li.PostStamp > span {color:#ffffff !important;}
+.PostStamp > span {color:#ffffff !important;font-family:basic;}
 
 .ExtendedContentButton:not(:hover):not(.Expanded),
 #ResponsibilitiesModule > div > dl > dd > ul > li
